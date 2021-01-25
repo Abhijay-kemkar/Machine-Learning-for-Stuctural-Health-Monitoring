@@ -41,20 +41,7 @@
 %            fn:  eigenfrequency (Hz)
 %             d:  damping ratio (%)
 %            EV:  mode shape (rotated but unscaled) (Eigenvektor)
-%
-% This algorithm was developed from the following literature:
-% 1. VanOverschee, P. and De Moor, B. (1996). Subspace Identification for
-% Linear Systems: Theory, Implementation, Applications. Kluwer Academic
-% Publishers.
-% 2. Peeters, B. and de Roeck, G. (1999). Reference-based
-% stochastic-subspace identification for output-only modal analysis.
-% Mechanical Systems and Signal Processing.
-% version 8 September 2016
 
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%                         Keith Soal 2017
-%                 questions to keithsoal at gmail.com
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function [sys,modal] = os_ssid(y,i,fs,Ir,W,n,AUXin,sil)
 
 % Check the arguments
